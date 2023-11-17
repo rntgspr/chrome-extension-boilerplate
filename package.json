@@ -1,0 +1,35 @@
+{
+  "name": "chrome-extension-boilerplate",
+  "version": "1.0.0",
+  "description": "chrome-extension-boilerplate",
+  "main": "index.js",
+  "scripts": {
+    "prebuild": "rm -rf ./dist/*",
+    "build": "node ./esbuild/build.mjs",
+    "predev": "rm -rf ./dist/*",
+    "dev": "node ./esbuild/build.mjs --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": {
+    "name": "Renato Gaspar",
+    "email": "rntgspr@gmail.com"
+  },
+  "license": "UNLICENSED",
+  "dependencies": {
+    "@tanstack/react-query": "^5.8.4",
+    "@tanstack/react-query-devtools": "^5.8.4",
+    "dotenv": "^16.3.1",
+    "esbuild": "^0.19.5",
+    "esbuild-plugin-copy": "^2.1.1",
+    "esbuild-plugin-inline-worker": "^0.1.1",
+    "query-to-extension": "^1.0.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "typescript": "^5.2.2"
+  },
+  "devDependencies": {
+    "@types/chrome": "^0.0.248",
+    "@types/node": "^20.10.0",
+    "@types/react": "^18.2.37"
+  }
+}
